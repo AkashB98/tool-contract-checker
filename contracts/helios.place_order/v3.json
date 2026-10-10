@@ -1,0 +1,64 @@
+{
+  "registered_at": "2026-10-08T18:01:08Z",
+  "schema": {
+    "additionalProperties": false,
+    "description": "Fictional Helios Home store order tool (v3 contract).",
+    "properties": {
+      "delivery_speed": {
+        "description": "Shipping speed",
+        "enum": [
+          "standard",
+          "express",
+          "overnight",
+          "same_day"
+        ],
+        "type": "string"
+      },
+      "gift_wrap": {
+        "description": "Add gift wrapping at checkout",
+        "type": "boolean"
+      },
+      "notes": {
+        "description": "Free-text note for the warehouse",
+        "maxLength": 500,
+        "type": "string"
+      },
+      "priority": {
+        "default": "standard",
+        "description": "Order handling priority",
+        "enum": [
+          "standard",
+          "high"
+        ],
+        "type": "string"
+      },
+      "quantity": {
+        "description": "Number of units to order (bulk orders allowed since v3)",
+        "maximum": 200,
+        "minimum": 2,
+        "type": "integer"
+      },
+      "sku": {
+        "description": "Helios catalog product code",
+        "minLength": 8,
+        "pattern": "^HH-[0-9]{4}$",
+        "type": "string"
+      },
+      "zip": {
+        "description": "Delivery ZIP or ZIP+4 code",
+        "pattern": "^[0-9]{5}(-[0-9]{4})?$",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sku",
+      "quantity",
+      "delivery_speed",
+      "priority"
+    ],
+    "title": "place_order v3",
+    "type": "object"
+  },
+  "tool": "helios.place_order",
+  "version": "v3"
+}
