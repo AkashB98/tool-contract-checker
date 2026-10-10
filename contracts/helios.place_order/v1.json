@@ -1,0 +1,48 @@
+{
+  "registered_at": "2026-10-08T18:01:08Z",
+  "schema": {
+    "additionalProperties": false,
+    "description": "Fictional Helios Home store order tool (v1 contract).",
+    "properties": {
+      "delivery_speed": {
+        "description": "Shipping speed",
+        "enum": [
+          "standard",
+          "express"
+        ],
+        "type": "string"
+      },
+      "notes": {
+        "description": "Free-text note for the warehouse",
+        "maxLength": 200,
+        "type": "string"
+      },
+      "product_id": {
+        "description": "Helios catalog product code",
+        "minLength": 8,
+        "pattern": "^HH-[0-9]{4}$",
+        "type": "string"
+      },
+      "quantity": {
+        "description": "Number of units to order",
+        "maximum": 99,
+        "minimum": 1,
+        "type": "integer"
+      },
+      "zip": {
+        "description": "Delivery ZIP code",
+        "pattern": "^[0-9]{5}$",
+        "type": "string"
+      }
+    },
+    "required": [
+      "product_id",
+      "quantity",
+      "delivery_speed"
+    ],
+    "title": "place_order v1",
+    "type": "object"
+  },
+  "tool": "helios.place_order",
+  "version": "v1"
+}
