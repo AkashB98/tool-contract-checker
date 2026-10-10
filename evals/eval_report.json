@@ -1,0 +1,427 @@
+{
+  "all_passed": true,
+  "case_count": 27,
+  "cases": [
+    {
+      "expected_breaking_categories": [
+        "removed_required_property"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.quantity"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "removed_required_property"
+      ],
+      "got_breaking_paths": [
+        "$.properties.quantity"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/removed-required-property",
+      "passed": true,
+      "severity": 10
+    },
+    {
+      "expected_breaking_categories": [
+        "new_required_no_default"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.priority"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "new_required_no_default"
+      ],
+      "got_breaking_paths": [
+        "$.properties.priority"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/new-required-no-default",
+      "passed": true,
+      "severity": 10
+    },
+    {
+      "expected_breaking_categories": [
+        "required_tightened"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.notes"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "required_tightened"
+      ],
+      "got_breaking_paths": [
+        "$.properties.notes"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/optional-to-required",
+      "passed": true,
+      "severity": 9
+    },
+    {
+      "expected_breaking_categories": [
+        "type_narrowed"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.rating"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "type_narrowed"
+      ],
+      "got_breaking_paths": [
+        "$.properties.rating"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/type-narrowed",
+      "passed": true,
+      "severity": 8
+    },
+    {
+      "expected_breaking_categories": [
+        "type_changed"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.sku"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "type_changed"
+      ],
+      "got_breaking_paths": [
+        "$.properties.sku"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/type-changed-disjoint",
+      "passed": true,
+      "severity": 8
+    },
+    {
+      "expected_breaking_categories": [
+        "enum_value_removed"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.delivery_speed"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "enum_value_removed"
+      ],
+      "got_breaking_paths": [
+        "$.properties.delivery_speed"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/enum-value-removed",
+      "passed": true,
+      "severity": 6
+    },
+    {
+      "expected_breaking_categories": [
+        "bound_tightened"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.product_id"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "bound_tightened"
+      ],
+      "got_breaking_paths": [
+        "$.properties.product_id"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/minlength-tightened",
+      "passed": true,
+      "severity": 4
+    },
+    {
+      "expected_breaking_categories": [
+        "bound_tightened"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.quantity"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "bound_tightened"
+      ],
+      "got_breaking_paths": [
+        "$.properties.quantity"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/minimum-raised",
+      "passed": true,
+      "severity": 4
+    },
+    {
+      "expected_breaking_categories": [
+        "bound_tightened"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.quantity"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "bound_tightened"
+      ],
+      "got_breaking_paths": [
+        "$.properties.quantity"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/maximum-lowered",
+      "passed": true,
+      "severity": 4
+    },
+    {
+      "expected_breaking_categories": [
+        "bound_tightened"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.notes"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "bound_tightened"
+      ],
+      "got_breaking_paths": [
+        "$.properties.notes"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/maxlength-tightened",
+      "passed": true,
+      "severity": 4
+    },
+    {
+      "expected_breaking_categories": [
+        "pattern_added_or_changed"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.zip"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "pattern_added_or_changed"
+      ],
+      "got_breaking_paths": [
+        "$.properties.zip"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/pattern-changed",
+      "passed": true,
+      "severity": 5
+    },
+    {
+      "expected_breaking_categories": [
+        "additional_properties_tightened"
+      ],
+      "expected_breaking_paths": [
+        "$"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "additional_properties_tightened"
+      ],
+      "got_breaking_paths": [
+        "$"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/additionalproperties-tightened",
+      "passed": true,
+      "severity": 4
+    },
+    {
+      "expected_breaking_categories": [
+        "items_narrowed"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.tags"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "items_narrowed"
+      ],
+      "got_breaking_paths": [
+        "$.properties.tags"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/items-narrowed",
+      "passed": true,
+      "severity": 6
+    },
+    {
+      "expected_breaking_categories": [
+        "renamed_property"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.customerId"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "renamed_property"
+      ],
+      "got_breaking_paths": [
+        "$.properties.customerId"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/renamed-property",
+      "passed": true,
+      "severity": 8
+    },
+    {
+      "expected_breaking_categories": [
+        "new_required_no_default"
+      ],
+      "expected_breaking_paths": [
+        "$.properties.priority"
+      ],
+      "expected_verdict": "BREAKING",
+      "got_breaking_categories": [
+        "new_required_no_default"
+      ],
+      "got_breaking_paths": [
+        "$.properties.priority"
+      ],
+      "got_verdict": "BREAKING",
+      "id": "breaking/shape-mismatch-not-paired",
+      "passed": true,
+      "severity": 10
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/description-only",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/new-optional-property",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/enum-widened",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/minlength-unchanged-boundary",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/minimum-lowered",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/maximum-raised",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/maxlength-widened",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/pattern-removed",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/additionalproperties-loosened",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/type-widened",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/new-required-with-default",
+      "passed": true,
+      "severity": 0
+    },
+    {
+      "expected_breaking_categories": [],
+      "expected_breaking_paths": [],
+      "expected_verdict": "COMPATIBLE",
+      "got_breaking_categories": [],
+      "got_breaking_paths": [],
+      "got_verdict": "COMPATIBLE",
+      "id": "compatible/required-to-optional",
+      "passed": true,
+      "severity": 0
+    }
+  ],
+  "deterministic": true,
+  "failed": 0,
+  "passed": 27,
+  "suite": "tool-contract-checker golden evals"
+}
